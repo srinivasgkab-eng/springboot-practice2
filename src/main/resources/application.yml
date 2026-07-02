@@ -1,0 +1,15 @@
+server:
+  port: 8086
+
+spring:
+  application:
+    name:rating-service
+  datasource:
+    url: jdbc:h2:mem:movieDB
+    username: user
+    password: password
+    driver-class-name: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update

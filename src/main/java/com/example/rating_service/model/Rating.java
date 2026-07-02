@@ -17,6 +17,8 @@ public class Rating {
     @GeneratedValue
     private Long id;
     private String name;
-    private Double rating;
+    private Double avgRating;
+
+    private int count;
 
 }

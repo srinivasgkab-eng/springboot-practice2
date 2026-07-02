@@ -10,8 +10,8 @@ import java.util.List;
 @Repository
 public interface RatingRepo extends JpaRepository<Rating, Long> {
 
-     Rating findByMovieName(String name);
+     Rating findByName(String name);
 
-     List<Rating> findAllByRatingBetween(double min, double max);
+     List<Rating> findAllByAvgRatingBetween(double min, double max);
 
 }
